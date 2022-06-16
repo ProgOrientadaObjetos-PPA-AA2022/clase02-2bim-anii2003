@@ -13,8 +13,7 @@ public class Estudiante {
     protected String identificacionEstudiante;
     // # edadEstudiante: Entero
     protected int edadEstudiante;
-    
-    
+
     
     public Estudiante(String n, String a, String iden, int ed){
         nombresEstudiante = n;

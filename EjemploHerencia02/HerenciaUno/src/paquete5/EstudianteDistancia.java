@@ -6,8 +6,7 @@ public class EstudianteDistancia extends Estudiante{
     int numeroAsignaturas;
     double costoAsignatura;
     double matriculaDistancia;
-    
-        
+            
     public EstudianteDistancia(String n, String ap, String iden, int e, 
             int numAsg, double costoAsg){
         super(n, ap, iden, e);

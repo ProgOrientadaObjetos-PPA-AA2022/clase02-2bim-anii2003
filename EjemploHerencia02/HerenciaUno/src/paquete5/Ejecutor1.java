@@ -15,8 +15,7 @@ public class Ejecutor1 {
         String identificacion = "110011";
         int edad = 36;
         int numAsignaturas = 5;
-        double costoAsig = 50.5;
-        
+        double costoAsig = 50.5;        
                 
         EstudianteDistancia estDistancia = new EstudianteDistancia(nombre,
                 apellido, identificacion, edad, numAsignaturas, costoAsig);

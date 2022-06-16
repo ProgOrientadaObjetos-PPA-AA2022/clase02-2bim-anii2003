@@ -15,8 +15,7 @@ public class EstudianteDistancia extends Estudiante{
     }
     
     public EstudianteDistancia(String n, String ap, String iden, int e){
-        super(n, ap, iden, e);
-      
+        super(n, ap, iden, e);      
     }
     
     // 2.  Método establecerNumeroAsginaturas(numero: Real)

@@ -11,8 +11,7 @@ public class Estudiante {
     // # identificacionEstudiante: Cadena
     protected String identificacionEstudiante;
     // # edadEstudiante: Entero
-    protected int edadEstudiante;
-    
+    protected int edadEstudiante;    
 
     //  Métodos establecer y calcular para los datos o atributos de la clase
     
