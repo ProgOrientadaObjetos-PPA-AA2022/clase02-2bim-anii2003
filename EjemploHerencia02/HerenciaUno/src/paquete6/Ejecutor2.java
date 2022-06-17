@@ -63,18 +63,16 @@ public class Ejecutor2 {
 
                 cadena = cadena + estPresencial;
 
-            } else if(opc == 2){
-                System.out.println(cadena);
-            }
-
-            else if(opc == 3){
+            } else 
+                if (opc == 2) {
+                    System.out.println(cadena);
+                } else
+                    if (opc == 3) {
                 break;
-            }
-            
-            else{
+            } else {
                 System.out.println("Opción inválida");
             }
-            
+
         } while (opc == 1);
 
     }

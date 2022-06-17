@@ -17,16 +17,14 @@ public class ReporteDistancia extends Reporte{
     private double totalMatriculaDistancia;
     
     public ReporteDistancia(String nombre, String carrera, String ciclo){
-        super(nombre, carrera, ciclo);
-        
+        super(nombre, carrera, ciclo);        
     }
     
     public void establecerLista(ArrayList<EstudianteDistancia> listado){
         lista = listado;
     }
     
-    public void establecerTotalMatriculasDistancia(){
-        
+    public void establecerTotalMatriculasDistancia(){        
         for (int i = 0; i < lista.size(); i++) {
             totalMatriculaDistancia = totalMatriculaDistancia + 
                     lista.get(i).obtenerMatriculaDistancia();
@@ -43,12 +41,17 @@ public class ReporteDistancia extends Reporte{
     
     @Override
     public String toString(){
-        
+        String cadena2 = "";
+        for (int i = 0; i < lista.size(); i++) {
+            cadena2 = String.format("%s%d)\n%s\n",cadena2,i+1, lista.get(i));            
+        }        
         String cadena = String.format("Carrera: %s \n"
                 + "Ciclo: %s\n"
+                + "%s\n"
                 + "El total de matriculas es: %.2f\n", 
                 carrera,
                 ciclo,
+                cadena2,
                 obtenerTotalMatriculasDistancia());
         return cadena;
     }

@@ -5,7 +5,7 @@
  */
 package paquete8;
 
-public class Ejecutor1 {
+public class Ejecutor2 {
 
     public static void main(String[] args) {
 
@@ -14,17 +14,14 @@ public class Ejecutor1 {
         String apellido = "Elizalde";
         String identificacion = "110011";
         int edad = 36;
-        int numAsignaturas = 5;
-        double costoAsig = 50.5;
         int numCred = 8;
-        int costoCred = 100;
+        int costoCred = 100;        
         
-        EstudianteDistancia estDistancia = new EstudianteDistancia(nombre,
-                apellido, identificacion, edad, numAsignaturas, costoAsig);
+        EstudiantePresencial1 estPresencial = new EstudiantePresencial1(nombre,
+                apellido, identificacion, edad, numCred,costoCred);
         
-        estDistancia.calcularMatriculaDistancia();
+        estPresencial.calcularMatriculaPresencial();
         
-        System.out.println(estDistancia);
-        
+        System.out.println(estPresencial);
     }
 }
